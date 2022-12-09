@@ -26,7 +26,7 @@ const ModalSection = ({ modal, setModal, selectedDate, refetch }) => {
             price
         }
 
-        fetch('http://localhost:5000/booking', {
+        fetch('https://doctor-site-server.vercel.app/booking', {
             method: 'POST',
             headers: {
                 'content-type' : 'application/json'

@@ -49,7 +49,7 @@ const Signup = () => {
     // user info save to database
         const saveUserInfo = (name, email) =>{
             const user = {name, email};
-            fetch('http://localhost:5000/users', {
+            fetch('https://doctor-site-server.vercel.app/users', {
                 method: 'POST',
                 headers:{
                     'content-type' : 'application/json'
@@ -66,7 +66,7 @@ const Signup = () => {
 
 // jwt token call
         // const getUserToken = email =>{
-        //     fetch(`http://localhost:5000/jwt?email=${email}`)
+        //     fetch(`https://doctor-site-server.vercel.app/jwt?email=${email}`)
         //     .then(res => res.json())
         //     .then(data =>{
         //         if(data.accessToken){

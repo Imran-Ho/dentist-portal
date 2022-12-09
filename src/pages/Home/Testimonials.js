@@ -31,11 +31,12 @@ const Testimonials = () => {
     ]
     return (
         <div className='mt-10'>
-            <div className='flex justify-between'>
-                <div>
-                    <h2 className='text-primary font-bold'>Testimonial</h2>
-                    <h3 className='text-3xl'>What our patients say</h3>
+            <div>
+                    <h2 className='text-primary text-3xl text-center font-bold'>Testimonial</h2>
+                    <h3 className='text-3xl text-center'>What our patients say</h3>
                 </div>
+            <div className='flex justify-between'>
+                
                 <figure>
                     <img className='w-24 lg:w-48' src={quote} alt="" />
                 </figure>

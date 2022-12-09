@@ -13,7 +13,7 @@ const AvailableAppointment = ({ selectedDate }) => {
     const date = format(selectedDate, 'PP');
     const {data:appointmentOption = [], refetch, isLoading} = useQuery({
         queryKey: ['slots', date],
-        queryFn: () => fetch(`http://localhost:5000/slots?date=${date}`)
+        queryFn: () => fetch(`https://doctor-site-server.vercel.app/slots?date=${date}`)
         .then(res => res.json())
     })
 
@@ -23,7 +23,7 @@ const AvailableAppointment = ({ selectedDate }) => {
 // we use react query instead of useEffect
 
     // useEffect(() => {
-    //     fetch('http://localhost:5000/slots')
+    //     fetch('https://doctor-site-server.vercel.app/slots')
     //         .then(res => res.json())
     //         .then(data => setAppointmentOption(data))
     // }, [])

@@ -1,10 +1,10 @@
 import React from 'react';
-import foot from '../../assets/images/footer.png'
+import footerImage from '../../assets/images/footer.png'
 
 const Footer = () => {
     return (
         <div className=''
-        style={{background:`url(${foot})`}}
+        style={{background:`url(${footerImage})`}}
         >
             <footer className="footer p-10 mt-10" >
                 <div>

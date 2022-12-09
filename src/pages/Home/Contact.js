@@ -4,7 +4,7 @@ import background from '../../assets/images/appointment.png'
 const Contact = () => {
 
     return (
-        <div className=''
+        <div className='my-5'
         style={{background:`url(${background})`}}
         >
             <div>
